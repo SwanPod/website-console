@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
-	res.send('Hello world!');
+	res.render('index');
 });
 
 app.listen(8080, console.log('Started server at http://localhost:8080'));
